@@ -1,0 +1,57 @@
+{
+  "mining": {
+    "coordinates": {
+      "x": 0,
+      "y": 64,
+      "z": 0
+    },
+    "area": {
+      "width": 100,
+      "height": 64,
+      "depth": 100
+    },
+    "mining_parameters": {
+      "block_hardness_threshold": 0.5,
+      "mining_speed": 1.0,
+      "tool_efficiency": 1.0,
+      "auto_tool_switch": true,
+      "target_ores": [
+        "diamond",
+        "emerald",
+        "gold",
+        "iron",
+        "copper",
+        "lapis_lazuli",
+        "redstone"
+      ],
+      "avoid_blocks": [
+        "obsidian",
+        "bedrock",
+        "water",
+        "lava"
+      ]
+    },
+    "behavior": {
+      "auto_pickup": true,
+      "inventory_management": true,
+      "drop_unwanted_blocks": false,
+      "return_to_base": false,
+      "base_coordinates": {
+        "x": 0,
+        "y": 64,
+        "z": 0
+      }
+    },
+    "safety": {
+      "light_level_requirement": 0,
+      "avoid_player_damage": true,
+      "health_threshold_percent": 20,
+      "log_mining_activity": true
+    }
+  },
+  "logging": {
+    "enabled": true,
+    "log_file": "mining.log",
+    "log_level": "INFO"
+  }
+}
